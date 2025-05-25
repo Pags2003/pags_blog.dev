@@ -107,7 +107,7 @@ export default function MyPosts() {
                   <AiOutlineLike /> {post.likes_count || 0} Likes
                 </div>
                 <div className="flex items-center gap-1">
-                  <AiOutlineEye /> {(post.views || 0)/2} Views
+                  <AiOutlineEye /> {post.views || 0} Views
                 </div>
               </div>
             </div>

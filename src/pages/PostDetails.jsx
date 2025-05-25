@@ -142,7 +142,7 @@ export default function PostDetail() {
       <div className="text-sm text-gray-500 mb-4 flex gap-4">
         <div className="flex items-center gap-1">
           <EyeIcon className="h-4 w-4 text-gray-500" />
-          <span>{(post.views ?? 0)/2} views</span>
+          <span>{post.views ?? 0} views</span>
         </div>
         <div className="flex items-center gap-1">
           <Heart className="h-4 w-4 text-gray-500" />

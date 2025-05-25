@@ -31,7 +31,7 @@ export default function Profile() {
   if (!userData) return <div className="text-center mt-10">Loading...</div>;
 
   const totalLikes = posts.reduce((acc, post) => acc + (post.likes_count || 0), 0);
-  const totalViews = posts.reduce((acc, post) => acc + (post.views || 0)/2, 0);
+  const totalViews = posts.reduce((acc, post) => acc + (post.views || 0), 0);
 
   return (
     <div className="max-w-5xl mx-auto mt-10 px-4 space-y-6">
@@ -86,7 +86,7 @@ export default function Profile() {
                   </div>
                   <div className="flex items-center gap-2">
                     <FaEye className="text-blue-600" size={22} />
-                    <span className="text-base">{(post.views || 0)/2}</span>
+                    <span className="text-base">{post.views || 0}</span>
                   </div>
                 </div>
               </div>
